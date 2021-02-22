@@ -50,25 +50,16 @@ final class Customer implements Serializable, Unserializable
         ];
     }
 
-    /**
-     * @return string
-     */
     public function getName(): string
     {
         return $this->name;
     }
 
-    /**
-     * @return string
-     */
     public function getEmail(): string
     {
         return $this->email;
     }
 
-    /**
-     * @return DateTimeImmutable
-     */
     public function getBirthday(): DateTimeImmutable
     {
         return $this->birthday;
