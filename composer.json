@@ -4,6 +4,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.0",
+        "ext-mongodb": "^1.9",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "mongodb/mongodb": "^1.8",
