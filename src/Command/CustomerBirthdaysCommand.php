@@ -2,7 +2,7 @@
 
 namespace App\Command;
 
-use App\Document\CustomerBirthdaysResult;
+use App\Document\SampleAnalytics\CustomerBirthdaysResult;
 use MongoDB\Collection;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\Table;

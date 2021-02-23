@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Document;
+namespace App\Document\SampleAnalytics;
 
 use BadMethodCallException;
 use DateTimeImmutable;
