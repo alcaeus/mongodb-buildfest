@@ -12,6 +12,7 @@ services:
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
         bind:
             MongoDB\Collection $customersCollection: '@CustomersCollection'
+            MongoDB\Collection $moviesCollection: '@MoviesCollection'
 
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
@@ -46,3 +47,10 @@ services:
         factory: ['@MongoDB\Database', 'selectCollection']
         arguments:
             $collectionName: 'customers'
+
+    MoviesCollection:
+        class: 'MongoDB\Collection'
+        factory: ['@MongoDB\Client', 'selectCollection']
+        arguments:
+            $databaseName: 'sample_mflix'
+            $collectionName: 'movies'
